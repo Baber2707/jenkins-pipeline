@@ -1,0 +1,10 @@
+pipe line{
+    agent any
+    stages{
+        stage("git checkout"){
+            steps{
+                git credentialsId: '08f9278d-d400-41b4-97d6-a0056b3224ee', url: 'https://github.com/Baber2707/jenkins-declarative-pipeline.git'
+            }
+        }
+    }
+}
